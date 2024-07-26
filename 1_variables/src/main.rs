@@ -1,9 +1,18 @@
 fn main() {
+
+    // Rust is statically typed. 
+    // What happens if type isn't assigned explicitly?
     let mut x = 10;
     println!("x is: {x}");
 
     x = 11;
     println!("x is now: {x}");
+
+    // OUTPUT:
+    // ```
+    // x is: 10
+    // x is now: 11
+    // ```
 
     // Rust is statically typed, but it does employ
     // type inference where the type isn't explicitly
@@ -18,6 +27,11 @@ fn main() {
     let age_b = 40;
 
     println!("Pirate ages: {} is {}, {} is {}", name_a, age_a, name_b, age_b);
+
+    // OUTPUT:
+    // ```
+    // Pirate ages: Captain Blackbeard is 35, Captain Cook is 40
+    // ```
 
 
     // Primitive types
@@ -66,5 +80,11 @@ fn main() {
     let z: u8 = x as u8;
     println!("x {} cast from i64 to u8: {}\nint overflow!!!", x, z);
 
+    // OUTPUT:
+    // ```
+    // y cast from u8 to i64: -3
+    // x -13 cast from i64 to u8: 243
+    // int overflow!!!
+    // ```    
 
 }
